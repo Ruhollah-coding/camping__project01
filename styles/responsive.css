@@ -1,0 +1,142 @@
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .header_content__title {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+
+    .menu--wraper .menu {
+        display: block;
+        display: flex
+    }
+
+    .nav_btn,
+    .mobile__nav__menu {
+        display: none;
+    }
+
+    .newsletter_banner {
+        flex-basis: 45%;
+    }
+
+    .newsletter_content {
+        flex-basis: 55%;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .footer-app {
+        display: block;
+    }
+
+    .footer-app--mobile {
+        display: none;
+    }
+
+    .scrrool_top-btn {
+        left: auto;
+    }
+
+    .newsletter::before {
+        width: auto;
+        height: auto;
+        top: -5rem;
+        left: -40rem;
+        background-size: auto;
+        background-position: center left;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+
+    .nav__links {
+        display: block;
+    }
+
+    .newsletter_content {
+        padding-right: 4rem;
+    }
+
+    .newsletter::before {
+        top: -10rem;
+        left: -30rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+
+    .newsletter {
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    .newsletter_banner {
+        width: 40rem;
+        flex-basis: auto;
+    }
+
+    .newsletter_content {
+        flex-basis: auto;
+        width: 60rem;
+    }
+
+    .newsletter::before {
+        top: -15rem;
+        left: -15rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+
+    .newsletter {
+
+        padding: 3rem 6rem;
+    }
+
+    .newsletter::before {
+        top: -10rem;
+        left: -30rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .header_content__title {
+        font-size: 2rem;
+    }
+
+    .newsletter_title {
+        max-width: 16rem;
+    }
+
+}
+
+@media (max-width: 992px) {}
