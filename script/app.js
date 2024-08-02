@@ -2,6 +2,8 @@ const navBtn = document.querySelector(".nav_btn")
 const mobileNavMenu = document.querySelector(".mobile__nav__menu")
 const likeIconActive = document.querySelectorAll(".place__like-icon")
 const refreshPage = document.querySelector(".app__logo")
+// انتخاب کانتینر
+const container = document.getElementById('container');
 // for navigation responsive
 let navBtnOpen = false;
 navBtn.addEventListener("click", function () {
@@ -33,3 +35,13 @@ likeIconActive.forEach(function (likeIconActive) {
 refreshPage.addEventListener("click", ()=> {
     location.reload();
 })
+// تنظیم عرض کانتینر به اندازه عرض صفحه وب
+function adjustContainerWidth() {
+    container.style.width = window.innerWidth + 'px';
+}
+
+// فراخوانی تابع هنگام بارگذاری صفحه
+window.onload = adjustContainerWidth;
+
+// فراخوانی تابع هنگام تغییر اندازه صفحه
+window.onresize = adjustContainerWidth;
